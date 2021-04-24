@@ -1,17 +1,10 @@
-import key from "./config/secret-api-key.js";
+import fetchWeatherDataByCity from "./src/api.js";
+import render from "./src/render-city-weather.js";
+import { storage } from "./src/storage.js";
+import { select, button } from "./src/selectors.js";
 
-console.log("index file", key);
+button.addEventListener("click", async () => {
+  storage[select.value] = await fetchWeatherDataByCity(select.value);
 
-let weather = null;
-
-fetch(`http://api.openweathermap.org/data/2.5/weather?q=Kyiv&appid=${key}`)
-  .then((responce) => {
-    return responce.json();
-  })
-  .then((data) => {
-    weather = data;
-
-    document.body.prepend(data.name);
-    document.body.prepend(data.visibility);
-  })
-  .catch((err) => console.log(err));
+  render(select.value);
+});

@@ -3,9 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+
     <title>Weather app</title>
   </head>
   <body>
+    <main class="main">
+
+      <span class="app-name">Your weather</span>
+      <span class="app-description">Available in your browser. At all times.</span>
+
+      <div class="main_bubble">
+        <div class="city-form">
+          <form class="form" action="#" onsubmit="return false;">
+          <input name="select-city" class="select-city" placeholder="Enter city name" type="text" autofocus onsubmit="return false;">
+
+          <button class="button" onsubmit="return false;"></button>
+        </form>
+        </div>
+
+        <div class="weather-information">
+          <img src="" alt="" class="country-flag"></span>
+        <div class="city-name-span"></div>
+      <ul class="temp">
+        <li class="temp-original">
+          <span>Temperature:</span>
+          <span class="temp-original-value"></span>
+        </li>
+        <li class="temp-feels-like">
+          <span>Feels like:</span>
+          <span class="temp-feels-like-value"></span>
+        </li>
+      </ul>
+
+      <ul class="img">
+        <img src="" alt="" class="main-img" />
+        <span class="main-img-description"></span>
+      </ul>
+
+      <ul class="wind">
+        <li class="wind-speed">
+          <span>Speed:</span>
+          <span class="wind-speed-value"></span>
+        </li>
+        <li class="wind-direction">
+          <span>Direction:</span>
+          <span class="wind-direction-value"></span>
+        </li>
+      </ul>
+
+      <ul class="additional">
+        <li class="additional-humidity">
+          <span>Humidity:</span>
+          <span class="additional-humidity-value"></span>
+        </li>
+        <li class="additional-pressure">
+          <span>Pressure:</span>
+          <span class="additional-pressure-value"></span>
+        </li>
+      </ul>
+      </div>
+      </div>
+    </main>
+
     <script type="module" src="./index.js"></script>
   </body>
 </html>

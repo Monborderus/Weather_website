@@ -1,0 +1,344 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(/assets/img/Background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main .app-name {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 900;
+  color: white;
+  font-size: 72px;
+  margin-bottom: 20px;
+}
+
+.main .app-description {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 900;
+  color: white;
+  font-size: 26px;
+}
+
+.main .main_bubble {
+  margin-top: 50px;
+}
+
+.main .main_bubble .city-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+
+.main .main_bubble .city-form .form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .main_bubble .city-form .form .select-city {
+  width: 40%;
+  height: 34px;
+}
+
+.main .main_bubble .city-form .form .button {
+  height: 40px;
+  width: 62px;
+  background: url(/assets/img/button.png) no-repeat 0 0;
+  background-color: #f6f6f6;
+  border: solid 1px black;
+  cursor: pointer;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  padding: 0;
+}
+
+.main .main_bubble .city-form .form .button:hover {
+  background: url(/assets/img/button_focus.png) no-repeat 0 0;
+}
+
+.main .main_bubble .weather-information {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 6px;
+  padding: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "name name" "box1 box2" "box3 box4";
+}
+
+.main .main_bubble .weather-information .city-name-span {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: name;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 56px;
+  margin: 10px;
+  background-color: white;
+  border: solid 2px #bbbbbb;
+  border-radius: 6px;
+  font-family: Arial;
+  color: #383838;
+}
+
+.main .main_bubble .weather-information .temp {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: box1;
+}
+
+.main .main_bubble .weather-information .wind {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: box3;
+}
+
+.main .main_bubble .weather-information .additional {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: box4;
+}
+
+.main .main_bubble .weather-information .temp,
+.main .main_bubble .weather-information .wind,
+.main .main_bubble .weather-information .additional {
+  margin: 10px;
+  background-color: white;
+  border: solid 2px #bbbbbb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 350px;
+  height: 80px;
+  border-radius: 6px;
+  padding: 20px;
+  font-size: 22px;
+  font-family: Arial;
+  line-height: 2;
+  color: #383838;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.main .main_bubble .weather-information .temp .wind-direction,
+.main .main_bubble .weather-information .wind .wind-direction,
+.main .main_bubble .weather-information .additional .wind-direction {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.main .main_bubble .weather-information .temp .wind-direction .wind-direction-value,
+.main .main_bubble .weather-information .wind .wind-direction .wind-direction-value,
+.main .main_bubble .weather-information .additional .wind-direction .wind-direction-value {
+  font-size: 20px;
+}
+
+.main .main_bubble .weather-information .img {
+  margin: 10px;
+  background-color: white;
+  border: solid 2px #bbbbbb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: box2;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 350px;
+  height: 80px;
+  border-radius: 6px;
+  padding: 20px;
+  font-size: 20px;
+  font-family: Arial;
+  line-height: 2;
+  color: #383838;
+}
+
+.main .main_bubble .weather-information .main-img {
+  display: none;
+  width: 80px;
+  height: 80px;
+}
+
+@media (max-width: 925px) {
+  .main {
+    height: auto;
+  }
+  .main .app-name {
+    margin-top: 30px;
+  }
+  .main .main_bubble .city-form .form .select-city {
+    width: 85%;
+  }
+  .main .main_bubble .weather-information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main .main_bubble .weather-information .city-name-span {
+    height: 80px;
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 642px) {
+  .main .app-description {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 544px) {
+  .main .app-name {
+    font-size: 64px;
+  }
+  .main .main_bubble .city-form {
+    margin-bottom: 0px;
+  }
+  .main .main_bubble .city-form .form .select-city {
+    width: 70%;
+  }
+  .main .main_bubble .weather-information {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .main .main_bubble .weather-information .city-name-span {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 451px) {
+  .main .app-name {
+    font-size: 56px;
+  }
+  .main .app-description {
+    font-size: 16px;
+  }
+  .main .main_bubble .weather-information .temp,
+  .main .main_bubble .weather-information .wind,
+  .main .main_bubble .weather-information .additional,
+  .main .main_bubble .weather-information .img,
+  .main .main_bubble .weather-information .city-name-span {
+    margin: 5px;
+    width: 300px;
+  }
+  .main .main_bubble .weather-information .temp .wind-direction-value,
+  .main .main_bubble .weather-information .wind .wind-direction-value,
+  .main .main_bubble .weather-information .additional .wind-direction-value,
+  .main .main_bubble .weather-information .img .wind-direction-value,
+  .main .main_bubble .weather-information .city-name-span .wind-direction-value {
+    font-size: 18px;
+  }
+  .main .main_bubble .weather-information .city-name-span {
+    font-size: 24px;
+    width: 340px;
+  }
+}
+
+@media (max-width: 426px) {
+  .main .main_bubble {
+    margin-top: 30px;
+  }
+  .main .main_bubble .app-name {
+    font-size: 56px;
+  }
+  .main .main_bubble .app-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 395px) {
+  .main .app-name {
+    font-size: 48px;
+  }
+  .main .app-description {
+    font-size: 12px;
+  }
+  .main .main_bubble .city-form {
+    margin-bottom: 15px;
+  }
+  .main .main_bubble .city-form .form .select-city {
+    width: 73%;
+  }
+  .main .main_bubble .weather-information {
+    padding: 0px;
+  }
+  .main .main_bubble .weather-information .temp,
+  .main .main_bubble .weather-information .wind,
+  .main .main_bubble .weather-information .additional,
+  .main .main_bubble .weather-information .img,
+  .main .main_bubble .weather-information .city-name-span {
+    margin: 5px;
+    width: 250px;
+  }
+  .main .main_bubble .weather-information .temp .wind-direction,
+  .main .main_bubble .weather-information .wind .wind-direction,
+  .main .main_bubble .weather-information .additional .wind-direction,
+  .main .main_bubble .weather-information .img .wind-direction,
+  .main .main_bubble .weather-information .city-name-span .wind-direction {
+    font-size: 17px;
+  }
+  .main .main_bubble .weather-information .temp .wind-direction .wind-direction-value,
+  .main .main_bubble .weather-information .wind .wind-direction .wind-direction-value,
+  .main .main_bubble .weather-information .additional .wind-direction .wind-direction-value,
+  .main .main_bubble .weather-information .img .wind-direction .wind-direction-value,
+  .main .main_bubble .weather-information .city-name-span .wind-direction .wind-direction-value {
+    font-size: 17px;
+  }
+  .main .main_bubble .weather-information .city-name-span {
+    font-size: 24px;
+    width: 290px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
